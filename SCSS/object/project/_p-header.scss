@@ -1,0 +1,22 @@
+/*=====================================
+    p-header(ヘッダーエリア)
+=====================================*/
+.p-header {
+    position: fixed;
+    background: rgb(164,125,114);
+    &__inner {
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 2px 2px 8px #f6f5f4;
+        &--logo {
+            color: #fff;
+            font-size: 24px;
+            @include mq() {
+                font-size: 20px;
+            }
+        }
+    }
+    
+}

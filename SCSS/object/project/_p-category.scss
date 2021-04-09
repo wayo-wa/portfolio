@@ -1,0 +1,38 @@
+/*=====================================
+    p-category(カテゴリーエリア)
+=====================================*/
+.p-category {
+    width: 100%;
+    margin-bottom: 64px;
+    &__title {
+        font-size: 18px;
+        padding-bottom: 8px;
+        border-bottom: 2px solid #ccc;
+    }
+    &__widget {
+        & ul li {//ウィジェットで生成された<ul><li>
+            position: relative;
+            width: 100%;
+            padding: 16px 16px 16px 32px;
+            border-bottom: 1px dashed #ccc;
+            transition: all .3s;
+            &::before {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 14px;
+                content: '>';
+                color: #ccc;
+            }
+            &:hover {
+                color: $color_attention;
+            }
+            &:hover::before {
+                color: $color_attention;
+            }
+            & a {//ウィジェットで生成された<a>
+                display: block;
+            }
+        }
+    }
+}

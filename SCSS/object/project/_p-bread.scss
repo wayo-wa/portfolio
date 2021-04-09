@@ -1,0 +1,27 @@
+/*=====================================
+    p-bread(パンくずリストエリア)
+=====================================*/
+.p-bread {
+    width: 100%;
+    padding: 16px 0;
+    transition: all .3s;
+    font-family: $font-family_point;
+    &--bgGray {
+        background: #efefef;
+    }
+    &__menu {//プラグイン用
+        & span {
+            margin-right: 4px;
+            &:not(:first-child) {
+                margin-left: 4px;
+            }
+        }
+    }
+    &__link {//プラグイン用
+        &:hover {
+            color: $color_attention;
+            text-decoration: underline;
+            transition: all .3s;
+        }
+    }
+}

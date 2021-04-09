@@ -1,0 +1,20 @@
+/*=====================================
+    p-privacy(プライバシーポリシー)
+=====================================*/
+.p-privacy {
+    padding: 50px 0;
+    &__title {
+        margin-bottom: 16px;
+    }
+    &__desc {
+        line-height: 1.75;
+        margin-bottom: 16px;
+        & a {
+            font-family: $font-family_point;
+            color: $color_attention;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}

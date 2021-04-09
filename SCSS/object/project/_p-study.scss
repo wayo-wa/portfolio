@@ -1,0 +1,68 @@
+/*=====================================
+    p-study(学習実績ページ)
+=====================================*/
+.p-study {
+    &__archive-title {
+        font-size: $font-size_default;
+        font-family: $font-family_point;
+        color: #888;
+        margin-bottom: 40px;
+        @include mq(md) {
+            margin-bottom: 24px;
+        }
+        @include mq() {
+            margin-bottom: 16px;
+        }
+    }
+    &__article {
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px 4px;
+        border-bottom: 1px solid #eee;
+        &-link{
+            display: inline-block;
+            width: 100%;
+        }
+    }
+    &__thumbnail {
+        width: 32%;
+        // margin-bottom: 20px;
+        border: 1px solid #ccc;
+        &-link {
+            display: block;
+        }
+        @include mq() {
+            width: 100%;
+        }
+        & img {
+            width: 100%;
+        }
+    }
+    &__content {
+        width: 63%;
+        font-family: $font-family_point;
+        & p {//the_excerptで出力される<p>略文
+            color: #666;
+        }
+        @include mq() {
+            width: 100%;
+        }
+        & time {
+            color: #999;
+        }
+    }
+    &__title {
+        font-size: 24px;
+        margin-bottom: 8px;
+        @include mq() {
+            margin-bottom: 4px;
+        }
+        &:hover {
+            color: $color_attention;
+            text-decoration: underline;
+        }
+    }
+}

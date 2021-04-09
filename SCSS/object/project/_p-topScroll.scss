@@ -1,0 +1,16 @@
+/*=====================================
+    p-scroll(トップスクロールボタン)
+=====================================*/
+.p-topScroll {
+    display: none;
+    right: 20px;
+    transition: all .3s;
+    color:  rgba(164,125,114,.8);
+    &__link {
+        display: block;
+        height: 100%;
+        & .icon-circle {
+            font-size: 50px;
+        }
+    }
+}

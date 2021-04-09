@@ -1,0 +1,36 @@
+/*=====================================
+    p-taxonomy(カテゴリー、タグ)
+=====================================*/
+.p-taxonomy {
+    width: 100%;
+    margin-top: 12px;
+    &--cat  {
+        & a {//the_categoryで出力される<a>
+            display: inline-block;
+            text-align: center;
+            padding: 5px;
+            background: #efefef;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            min-width: 80px;
+            &:hover {
+                background: #ddd;
+            }
+        }
+    }
+    &--tag {
+        display: block;
+        margin-top: 8px;
+        color: #888;
+    }
+    &--spanTag {
+        & a {//the_tagsで出力される<a>
+            color: #888;
+            font-size: 14px;
+            margin-top: 8px;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}

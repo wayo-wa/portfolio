@@ -1,0 +1,32 @@
+/*=====================================
+    p-pagination(ページネーション)
+=====================================*/
+.p-pagination {
+    margin-top: 36px;
+    &__block {
+        display: flex;
+        justify-content: center;
+    }
+    &__list {
+        display: inline-block;
+        font-family: $font-family_point;
+        background: #ddd;
+        margin-right: 8px;
+        border-radius: 2px;
+        transition: all .3s;
+        &.active {
+            padding: 8px 16px;
+            background: $color_attention;
+            color: #fff;
+        }
+        &:hover {
+            background: $color_attention;
+            color: #fff;
+            transition: all .3s;
+        }
+    }
+        &__link {
+            display: block;
+            padding: 8px 16px;
+        }
+}

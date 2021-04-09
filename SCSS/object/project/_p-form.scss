@@ -1,0 +1,58 @@
+/*=====================================
+    p-form(フォームエリア)
+=====================================*/
+.p-form {
+    width: 100%;
+    margin-top: 40px;
+    @include mq(md) {
+        margin-top: 32px;
+    }
+    & label {
+        display: block;
+        margin-bottom: 8px;
+    }
+    &__item {
+        width: 100%;
+        font-weight: bold;
+        margin-top: 16px;
+        @include mq() {
+            margin-top: 8px;
+        }
+    }
+    &__require {
+        display: inline-block;
+        color: #fff;
+        font-size: 12px;
+        // background: #666;
+        background: $color_attention;
+        border-radius: 3px;
+        margin-left: 8px;
+        padding: 2px 4px;
+        font-family: $font-family_point;
+
+    }
+    &__input {
+        width: 100%;
+        display: block;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        background: #fff;
+        padding: 10px;
+    }
+    &__desc {
+        font-weight: bold;
+        & a {
+            font-family: $font-family_point;
+            color: $color_attention;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        
+    }
+}
+
+//wp-form　エラーメッセージ用
+.mw_wp_form .error {
+    font-family: 'Noto Sans JP', sans-serif;
+}

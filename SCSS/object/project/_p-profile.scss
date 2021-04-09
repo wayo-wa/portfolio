@@ -1,0 +1,38 @@
+/*=====================================
+    p-profile(プロフィールエリア)
+=====================================*/
+.p-profile {
+    width: 100%;
+    &__title {
+        font-size: 18px;
+        padding-bottom: 8px;
+        border-bottom: 2px solid #ccc;
+        margin-bottom: 16px;
+    }
+    &__illustration {
+        width: 50%;
+        margin: 16px auto;
+        & img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 50%;
+        }
+    }
+    &__text {
+        margin-top: 16px;
+    }
+    &__link {
+        display: block;
+        width: 100%;
+        padding: 5px;
+        margin-top: 16px;
+        border: 2px solid #ccc;
+        text-align: center;
+        transition: all .3s;
+        &:hover {
+            transition: all .3s;
+            background: $color_attention;
+            color: #fff;
+        }
+    }
+}

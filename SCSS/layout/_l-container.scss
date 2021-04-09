@@ -1,0 +1,23 @@
+/*=====================================
+    l-container
+=====================================*/
+.l-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    &__main {
+        width: 68%;
+        margin-bottom: 32px;
+        @include mq(md) {
+            width: 100%;
+        }
+    }
+    &__sidebar {
+        width: 29%;
+        padding: 5px;
+        @include mq(md) {
+            width: 100%;
+        }
+    }
+}

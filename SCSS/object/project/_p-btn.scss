@@ -1,0 +1,41 @@
+/*=====================================
+    p-btn(ボタンエリア)
+=====================================*/
+.p-btn {
+    position: relative;
+    display: block;
+    width: 200px;
+    height: 50px;//paddingで高さ出すと文字が英語と日本語の違いでheightが変わってしまうのでheight指定にした。
+    line-height: 45px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 20px;
+    transition: all .3s;
+    color: #fff;
+    background: $color_sub;
+    border: 2px solid $color_sub;
+    &--submit {
+        border-radius: 3px;
+    }
+    &--submit:hover {
+        background: rgb(204, 162, 150);
+        border: 2px solid rgb(204, 162, 150);
+        transition: all .3s;
+    }
+    &--more:hover {
+        color: $color_sub;
+        background:#fff;
+    }
+    &--more::after {
+        position: absolute;
+        top: 50%;
+        right: 14px;
+        transform: translateY(-50%);
+        content: ">";
+    }
+    &-area {
+        margin: 40px auto;
+    }
+    
+    
+}    

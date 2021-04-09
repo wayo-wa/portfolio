@@ -1,0 +1,59 @@
+/*=====================================
+    p-page(各ページの共通箇所)
+=====================================*/
+.p-page {
+    &-top {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        &--full {
+            min-height: calc(100vh - 70px);
+        } 
+        &__desc {
+            margin-bottom: 24px;
+            font-size: $font-size_default;
+            font-weight: bold;
+            & .dammy {//dammy.php
+                display: none;
+                @include mq() {
+                    display: block;
+                }
+            }
+            & .privacy {//privacy-policy.php
+                display: block;
+                @include mq() {
+                    display: none;
+                }
+            }
+        }
+    }
+    &__visual {
+        margin-top: 20px;
+        height: 350px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        box-shadow: 2px 2px 20px $color_sub;
+        @include mq(md) {
+            height: 300px;
+        }
+        @include mq() {
+            height: 250px;
+        }
+        &--study {
+            background-image: url('../images/visual-studyPage.jpg');
+            background-position: center center;
+        }
+        &--contact {
+            background-image: url('../images/visual-contactPage.jpg');
+            background-position: center center;
+        }
+    }
+    &__a-link {
+        color: $color_attention;
+        font-family: $font-family_point;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

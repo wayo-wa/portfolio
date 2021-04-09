@@ -1,0 +1,33 @@
+/*=====================================
+    p-post(新着投稿)
+=====================================*/
+.p-post {
+    &__item {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 8px;
+        border-bottom: 1px solid #eee;
+    }
+    &__thumbnail {
+        width: 29%;
+        &-link {
+            display: block;
+            & img {
+                width: 100%;
+            }
+        }
+    }
+    &__desc {
+        width: 68%;
+    }
+    &__title {
+        font-size: $font-size_default;
+        font-weight: normal;
+        padding: 5px 0;
+        &-link:hover {
+            color: $color_attention;
+        }
+    }
+    
+}

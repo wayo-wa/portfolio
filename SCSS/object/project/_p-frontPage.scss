@@ -1,0 +1,112 @@
+/*=====================================
+    p-frontPage(フロントページの各エリア設定)
+=====================================*/
+.p-frontPage {
+    /*==========　VISUAL　==========*/
+    &-visual {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        background-image: url(../images/visual-frontPage.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;//固定
+        height: calc(100vh - 70px);
+        &__title {
+            max-width: 750px;
+            padding: 5px;
+            display: flex;//titleエリア内のロゴの上下中央配置
+            flex-flow: column;
+            justify-content: center;
+            margin: 0 auto;
+            text-align: center;
+            text-shadow:  2px  2px 10px #fff ,
+                         -2px  2px 10px #fff ,
+                          2px -2px 10px #fff ,
+                         -2px -2px 10px #fff;
+        }
+        &__logo {
+            font-size: 40px;
+            margin-bottom: 24px;
+            @include mq(md) {
+                font-size: 32px;
+            }
+            @include mq() {
+                font-size: 28px;
+            }
+            & br {
+                display: none;
+                @include mq() {
+                    display: block;
+                }
+            }
+        }
+        &__desc {
+            font-size: $font-size_default;
+            letter-spacing: 0.2em;
+            line-height: 2;
+        }
+        
+    }
+    /*==========　ABOUT　==========*/
+    &-about {
+        &__inner {
+            padding: 12px;
+            margin-top: 24px;
+            border: solid 1px $color_sub; /* 内側の線になる一本線の枠線をひく*/
+            outline: solid 3px $color_sub; /* 外側の線になる一本線の枠線をひく*/
+            outline-offset: 4px; /* 外側の線と内側の線の空き具合を調整*/
+            box-shadow: 2px 2px 40px $color_sub;
+            @include mq(lg) {
+                width: 90%;
+            }
+        }
+        &__body{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+        }
+        &__illustration {
+            width: 30%;
+            max-width: 300px;
+            margin-top: 32px;
+            @include mq(md) {
+                width: 100%;
+                max-width: 280px;
+                margin: 0 auto;
+            }
+            
+            & img {
+                width: 100%;
+                height: auto;
+                border-radius: 50%;
+            }
+        }
+        &__content {
+            width: 65%;
+            @include mq(md) {
+                width: 100%;
+                margin-top: 16px;
+            }
+            &-title {
+                font-family: $font-family_point;
+                margin-bottom: 12px;
+                @include mq(md) {
+                    text-align: center;
+                }
+            }
+            &-text {
+                line-height: 2;
+                margin-bottom: 12px;
+            }
+        }
+    }
+    /*==========　STUDY　==========*/
+    &-study {
+        text-align: center;
+        font-size: 18px;
+    }
+    /*==========　CONTACT　==========*/
+    
+}
