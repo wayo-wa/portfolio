@@ -2,7 +2,7 @@
   
 ●使用ＯＳ：windows10  
 ●作成目的：WordPressの学習の為。  
-●使用言語：HTML/SCSS/JS(jQuery)  
+●使用言語：PHP/SCSS/JS(jQuery)  
 ●制作日数：約30日間
 
 #### 【URL】&emsp;https://glacial-beyond-81919.herokuapp.com/<br> 
