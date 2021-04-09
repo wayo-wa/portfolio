@@ -28,9 +28,7 @@ function load_google_cdn() {
         //GoogleのCDNのjQueryを出力
         wp_enqueue_script(
             'jquery',//scriptのハンドル名
-            /* local時だけhttp://から記述！！！！！！！！！ */
-            'http://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js',//src
-            // 'ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js',//src
+            ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js',//src
             array(),//このscriptより前に読み込む必要があるscript
             '3.6.0',//バージョンがある
             true//footer
@@ -45,7 +43,6 @@ add_action('wp_enqueue_scripts', 'load_google_cdn');
 function custom_enqueue_styles() {
     wp_enqueue_style(//CSSファイル p148参照
         'base-style',
-        // get_stylesheet_uri(),//テーマ認識用のデフォルトcssファイル　←これいらない？
         get_template_directory_uri().'/css/app.min.css',//sassコンパイル＆css圧縮後のファイル
         array(),
         null,
