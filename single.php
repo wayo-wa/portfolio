@@ -32,15 +32,9 @@
                         <?php if(have_posts()): ?>
                             <?php while(have_posts()): ?>
                                 <?php the_post(); ?>
-                                    <!-- <div class="p-article <?php post_class(); ?>"> -->
-                                        <div class="p-article__header">
-                                            <h1 class="p-article__title"><?php the_title(); ?></h1>
-                                            
-                                        <!-- </div> -->
-                                        <!-- <div class="p-article__desc"> -->
-                                            <?php the_content(); ?>
-                                            <!--the_contentの中にブロックエディタで指定した<p><i><img>タグなどが入ってくる-->
-                                        <!-- </div> -->
+                                    <div class="p-article <?php post_class(); ?>">
+                                          <h1 class="p-article__title"><?php the_title(); ?></h1>
+                                          <?php the_content(); ?>
                                     </div>
                             <?php endwhile; ?>
                         <?php endif; ?>
