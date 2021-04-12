@@ -55,10 +55,10 @@ $('.js-toggle-sp-menu').on('click', function() {
     SP用ドロワーメニューのクリックイベント
 ======================================================*/
 $('.js-toggle-sp-menu').on('click', function() {
-    $('.js-sp-drawer').slideToggle('slow');//<ul>タグにslideToggleをあてる事！
+    $('.js-sp-drawer').slideToggle('slow');
 });
 
-//ドロワーメニューがクリックされたら上記のクリックイベント発火させる
+//ドロワーメニューがクリックされた時も上記のクリックイベント発火させる
 $('.js-drawer-list').on('click', function() {
     if (window.innerWidth <= 768) {
         $('.js-toggle-sp-menu').click();
