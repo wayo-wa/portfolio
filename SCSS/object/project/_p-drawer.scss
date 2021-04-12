@@ -1,7 +1,7 @@
 /*=====================================
     p-drawer(headerのドロワーメニュー)
 =====================================*/
-.p-drawer {//<ul>タグを囲むだけのブロック用のdiv。いるかな？
+.p-drawer {
     display: none;//非表示
     @include mq(md) {
         display: block;//表示
@@ -9,7 +9,7 @@
         width: 100%;
         top: 0;
         z-index: 3;
-        &__menu {//<ul>タグにslideToggleのイベントをあてる事！
+        &__menu {//<ul>タグにslideToggle
             display: none;//<ul>自体はjsのslideToggleで表示させる
             position: absolute;
             width: 100%;
