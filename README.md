@@ -2,7 +2,7 @@
   
 ●使用ＯＳ：Windows10  
 ●作成目的：WordPressの学習の為。  
-●使用言語：HTML, Sass(CSS), JavaScript (jQuery/gulp) ,WordPress
+●使用言語：HTML, Sass(CSS), JavaScript (jQuery/gulp) ,WordPress  
 ●制作日数：約30日間
 
 #### 【URL】&emsp;https://awflow.wp.xdomain.jp/<br> 
